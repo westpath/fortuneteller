@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+    <script type = "text/javascript" src="main.js"></script>
+    <link href="index.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AN OMEN AWAITS</title>
+</head>
+<body>
+    <section class="gridMaker">
+        <div>
+            <button id="button" type="button" onclick= "fade(document.getElementById('button')); typeWriter('YOU WISH TO KNOW YOUR FATE?'); unfade(document.getElementById('yesOrNo'))">CLAIM YOUR OMEN</button>
+        </div>
+        <div>
+            <h1 id="welcomeText"></h1>
+            <div id="yesOrNo">
+                <button type="button" onclick="fade(document.getElementById('welcomeText')); fade(document.getElementById('yesOrNo')); typeWriter2('THIS CAN BE ARRANGED... PREPARE THYSELF...'); unfade(document.getElementById('prepared'))">YES</button>
+                <button type="button" onclick="fade(document.getElementById('welcomeText')); fade(document.getElementById('yesOrNo')); typeWriter3('THEN LEAVE THIS PLACE AND NEVER RETURN.')">NO</button>
+            </div>
+            <h1 id="yesText"></h1>
+            <h1 id="noText"></h1>
+            <div id="prepared">
+                <button type="button" onclick="fade(document.getElementById('yesText')); fade(document.getElementById('prepared')); typeWriter4(revealOmen().toUpperCase()); unfade(document.getElementById('newOmen'))">I am prepared.</button>
+            </div>
+            <h1 id="omenText"></h1>
+            <div id="newOmen">
+                <button type="button" onclick="typeWriter5(revealOmen().toUpperCase())">This is not what I asked for.</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

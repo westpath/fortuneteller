@@ -1,0 +1,144 @@
+html {
+    font-size: 32px;
+    font-family: "M PLUS 1 Code";
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+
+#button {
+    font-family: "M PLUS 1 Code";
+    font-size: 1rem;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 30rem;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: antiquewhite 0.1rem solid;
+    text-align: center;
+    padding: 2rem;
+    color: black;
+}
+
+#button:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#button:focus {
+    background-color: black;
+    color: antiquewhite;
+}
+
+h1 {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: antiquewhite;
+}
+
+#yesOrNo {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+#yesOrNo button {
+    font-family: "M PLUS 1 Code";
+    font-size: 1rem;
+    margin: 0rem 5rem;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: antiquewhite 0.1rem solid;
+    text-align: center;
+    padding: 2rem;
+    width: 9rem;
+    color: black;
+}
+#yesOrNo button:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#yesOrNo button:focus {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#prepared {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+#prepared button {
+    font-family: "M PLUS 1 Code";
+    font-size: 1rem;
+    margin: 0rem 5rem;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: antiquewhite 0.1rem solid;
+    text-align: center;
+    padding: 2rem;
+    width: 20rem;
+    color: black;
+}
+#prepared button:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#prepared button:focus {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#omenText {
+    width: 90%;
+}
+
+#newOmen {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+#newOmen button {
+    font-family: "M PLUS 1 Code";
+    font-size: 1rem;
+    margin: 0rem 5rem;
+    justify-content: center;
+    background-color: antiquewhite;
+    border: antiquewhite 0.1rem solid;
+    text-align: center;
+    padding: 2rem;
+    width: 20rem;
+    color: black;
+}
+#newOmen button:hover {
+    background-color: black;
+    color: antiquewhite;
+}
