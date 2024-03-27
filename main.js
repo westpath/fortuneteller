@@ -13,3 +13,85 @@ function revealOmen() {
 }
 
 console.log(revealOmen())
+
+
+
+
+function typeWriter(string) {
+    let letters = String(string).split("");
+    console.log(letters)
+    for (let step = 0; step < letters.length; step++) {
+        setTimeout(function() {
+            document.getElementById("welcomeText").innerHTML += letters[step];
+        }, 50 * step);
+    }
+}
+
+function typeWriter2(string) {
+    let letters = String(string).split("");
+    console.log(letters)
+    for (let step = 0; step < letters.length; step++) {
+        setTimeout(function() {
+            document.getElementById("yesText").innerHTML += letters[step];
+        }, 50 * step);
+    }
+}
+
+function typeWriter3(string) {
+    let letters = String(string).split("");
+    console.log(letters)
+    for (let step = 0; step < letters.length; step++) {
+        setTimeout(function() {
+            document.getElementById("noText").innerHTML += letters[step];
+        }, 50 * step);
+    }
+}
+
+function typeWriter4(string) {
+    let letters = String(string).split("");
+    console.log(letters)
+    for (let step = 0; step < letters.length; step++) {
+        setTimeout(function() {
+            document.getElementById("omenText").innerHTML += letters[step];
+        }, 50 * step);
+    }
+}
+
+function typeWriter5(string) {
+    document.getElementById("omenText").innerHTML = ""
+    let letters = String(string).split("");
+    console.log(letters)
+    for (let step = 0; step < letters.length; step++) {
+        setTimeout(function() {
+            document.getElementById("omenText").innerHTML += letters[step];
+        }, 50 * step);
+    }
+}
+
+
+function fade(element) {
+    var op = 1; 
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 10);
+}
+
+function unfade(element) {
+    var op = 0.01; 
+    element.style.opacity = 0;
+    element.style.visibility = 'visible';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 50);
+}
